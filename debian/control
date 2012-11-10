@@ -1,0 +1,12 @@
+Source: ros-groovy-diagnostic-common-diagnostics
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-rospy
+Homepage: http://ros.org/wiki/diagnostic_common_diagnostics
+Standards-Version: 3.9.2
+
+Package: ros-groovy-diagnostic-common-diagnostics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-tf,ros-groovy-diagnostic-updater,ros-groovy-rospy,hddtemp
+Description: diagnostic_common_diagnostics
