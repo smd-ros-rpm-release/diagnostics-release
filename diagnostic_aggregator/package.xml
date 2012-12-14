@@ -1,6 +1,6 @@
 <package>
   <name>diagnostic_aggregator</name>
-  <version>1.7.8</version>
+  <version>1.7.9</version>
   <description>diagnostic_aggregator</description>
   <author>Kevin Watts</author>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
@@ -12,6 +12,8 @@
 <!-- <url type="bugtracker"></url> -->
 
   <author>Kevin Watts</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>diagnostic_msgs</build_depend>
   <build_depend>pluginlib</build_depend>
