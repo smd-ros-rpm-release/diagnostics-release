@@ -1,0 +1,12 @@
+Source: ros-groovy-self-test
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-diagnostic-updater,ros-groovy-rostest,ros-groovy-catkin,ros-groovy-diagnostic-msgs,ros-groovy-roscpp
+Homepage: http://www.ros.org/wiki/self_test
+Standards-Version: 3.9.2
+
+Package: ros-groovy-self-test
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-diagnostic-updater,ros-groovy-diagnostic-msgs,ros-groovy-roscpp
+Description: self_test
