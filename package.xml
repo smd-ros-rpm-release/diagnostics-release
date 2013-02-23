@@ -1,6 +1,6 @@
 <package>
   <name>diagnostic_analysis</name>
-  <version>1.7.9</version>
+  <version>1.7.10</version>
   <description>The diagnostic_analysis package can convert a log of diagnostics data
     into a series of CSV files. Robot logs are recorded with rosbag, and
     can be processed offline using the scripts in this package.</description>
@@ -27,9 +27,7 @@
   <run_depend>rosbag</run_depend>
   <run_depend>roslib</run_depend>
 
-  <test_depend>rosbag</test_depend>
   <test_depend>rostest</test_depend>
-  <test_depend>diagnostic_msgs</test_depend>
 
   <export>
     <architecture_independent/>
