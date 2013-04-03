@@ -1,6 +1,6 @@
 <package>
   <name>diagnostics</name>
-  <version>1.7.10</version>
+  <version>1.8.0</version>
   <description>diagnostics</description>
   <author>Kevin Watts</author>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
@@ -12,6 +12,8 @@
 <!-- <url type="bugtracker"></url> -->
 
   <author>Kevin Watts</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>diagnostic_aggregator</run_depend>
   <run_depend>diagnostic_analysis</run_depend>
