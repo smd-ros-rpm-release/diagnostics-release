@@ -1,3 +1,29 @@
+## diagnostics (indigo) - 1.8.3-0
+
+The packages in the `diagnostics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -t indigo -r indigo diagnostics` on `Thu, 24 Apr 2014 00:18:12 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+- rosdistro version: `1.8.2-0`
+- old version: `1.8.2-1`
+- new version: `1.8.3-0`
+
+Versions of tools used:
+- bloom version: `0.5.4`
+- catkin_pkg version: `0.2.1`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.33`
+
+
 ## diagnostics (indigo) - 1.8.2-1
 
 The packages in the `diagnostics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -t indigo -r indigo diagnostics` on `Thu, 24 Apr 2014 00:12:05 -0000`
