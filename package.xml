@@ -1,6 +1,6 @@
 <package>
   <name>diagnostic_aggregator</name>
-  <version>1.8.3</version>
+  <version>1.8.4</version>
   <description>diagnostic_aggregator</description>
   <author>Kevin Watts</author>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
@@ -36,6 +36,5 @@
   <export>
     <cpp lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -ldiagnostic_aggregator `rosboost-cfg --lflags regex`" cflags="-I${prefix}/include `rosboost-cfg --cflags`"/>
     <diagnostic_aggregator plugin="${prefix}/analyzer_plugins.xml"/>
-    <architecture_independent/>
   </export>
 </package>
