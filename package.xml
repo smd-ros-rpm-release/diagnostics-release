@@ -1,7 +1,9 @@
 <package>
   <name>diagnostics</name>
-  <version>1.7.10</version>
-  <description>diagnostics</description>
+  <version>1.7.11</version>
+  <description>
+    Packages related to gathering, viewing, and analyzing diagnostics data from robots.
+  </description>
   <author>Kevin Watts</author>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
   <maintainer email="brice.rebsamen@gmail.com">Brice Rebsamen</maintainer>
@@ -12,6 +14,8 @@
 <!-- <url type="bugtracker"></url> -->
 
   <author>Kevin Watts</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>diagnostic_aggregator</run_depend>
   <run_depend>diagnostic_analysis</run_depend>
