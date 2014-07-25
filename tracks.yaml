@@ -26,14 +26,16 @@ tracks:
     - git-bloom-generate -y rosrelease :{ros_distro} --source upstream -i :{release_inc}
     - git-bloom-generate -y rosdebian --prefix release/:{ros_distro} :{ros_distro}
       -i :{release_inc}
-    devel_branch: hydro-devel
+    - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
+      :{release_inc}
+    devel_branch: groovy-devel
     last_version: 1.8.3
     name: diagnostics
     patches: null
     release_inc: '0'
     release_repo_url: git@github.com:ros-gbp/diagnostics-release.git
     release_tag: :{version}
-    ros_distro: hydro
+    ros_distro: groovy
     vcs_type: git
     vcs_uri: https://github.com/ros/diagnostics.git
     version: :{auto}
