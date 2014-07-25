@@ -1,3 +1,31 @@
+## diagnostics (groovy) - 1.7.11-0
+
+The packages in the `diagnostics` repository were released into the `groovy` distro by running `/usr/bin/bloom-release -t groovy -r groovy diagnostics` on `Fri, 25 Jul 2014 08:10:21 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: https://github.com/ros-gbp/diagnostics-release.git
+- rosdistro version: `1.7.10-0`
+- old version: `1.8.3-0`
+- new version: `1.7.11-0`
+
+Versions of tools used:
+- bloom version: `0.5.11`
+- catkin_pkg version: `0.2.4`
+- rosdep version: `0.10.28`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## diagnostics (indigo) - 1.8.3-0
 
 The packages in the `diagnostics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -t indigo -r indigo diagnostics` on `Thu, 24 Apr 2014 00:18:12 -0000`
