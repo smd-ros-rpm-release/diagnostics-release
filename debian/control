@@ -1,0 +1,12 @@
+Source: ros-groovy-diagnostics
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 7.0.0), ros-groovy-catkin
+Homepage: http://www.ros.org/wiki/diagnostics
+Standards-Version: 3.9.2
+
+Package: ros-groovy-diagnostics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-diagnostic-aggregator, ros-groovy-diagnostic-analysis, ros-groovy-diagnostic-common-diagnostics, ros-groovy-diagnostic-updater, ros-groovy-self-test
+Description: Packages related to gathering, viewing, and analyzing diagnostics data from robots.
