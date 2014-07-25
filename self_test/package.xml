@@ -1,11 +1,10 @@
 <package>
   <name>self_test</name>
-  <version>1.8.3</version>
+  <version>1.7.11</version>
   <description>self_test</description>
   <author>Kevin Watts</author>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
   <maintainer email="brice.rebsamen@gmail.com">Brice Rebsamen</maintainer>
-  <maintainer email="namniart@gmail.com">Austin Hendrix</maintainer>
 
   <license>BSD</license>
 

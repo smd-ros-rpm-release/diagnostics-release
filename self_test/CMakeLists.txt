@@ -1,3 +1,4 @@
+include_directories(${Boost_INCLUDE_DIRS})
 cmake_minimum_required(VERSION 2.8.3)
 project(self_test)
 
@@ -8,10 +9,16 @@ catkin_package(DEPENDS diagnostic_msgs diagnostic_updater roscpp
                INCLUDE_DIRS include
 )
 
-include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
+include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
+include_directories(include)
 
+add_executable(selftest_rostest src/selftest_rostest.cpp)
 find_package(Boost REQUIRED COMPONENTS thread)
 include_directories(${Boost_INCLUDE_DIRS})
+target_link_libraries(selftest_rostest ${Boost_LIBRARIES}
+                                       ${catkin_LIBRARIES}
+                                       gtest
+)
 
 add_executable(run_selftest src/run_selftest.cpp)
 find_package(Boost REQUIRED COMPONENTS thread)
@@ -27,20 +34,12 @@ target_link_libraries(selftest_example ${Boost_LIBRARIES}
                                        ${catkin_LIBRARIES}
 )
 
-add_executable(selftest_rostest src/selftest_rostest.cpp)
-target_link_libraries(selftest_rostest ${Boost_LIBRARIES}
-                                       ${catkin_LIBRARIES}
-                                       gtest
-)
+add_subdirectory(test EXCLUDE_FROM_ALL)
 
-if(CATKIN_ENABLE_TESTING)
-  add_subdirectory(test)
-
-  add_rostest(test/launch/nominal_test.launch)
-  add_rostest(test/launch/no_id_test.launch)
-  add_rostest(test/launch/error_test.launch)
-  add_rostest(test/launch/exception_test.launch)
-endif()
+add_rostest(test/launch/nominal_test.launch)
+add_rostest(test/launch/no_id_test.launch)
+add_rostest(test/launch/error_test.launch)
+add_rostest(test/launch/exception_test.launch)
 
 install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
@@ -50,3 +49,4 @@ install(TARGETS run_selftest selftest_example selftest_rostest
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION})
+

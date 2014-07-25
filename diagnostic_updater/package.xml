@@ -1,10 +1,9 @@
 <package>
   <name>diagnostic_updater</name>
-  <version>1.8.3</version>
+  <version>1.7.11</version>
   <description>diagnostic_updater contains tools for easily updating diagnostics. it is commonly used in device drivers to keep track of the status of output topics, device status, etc.</description>
   <author>Kevin Watts</author>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
-  <maintainer email="namniart@gmail.com">Austin Hendrix</maintainer>
   <maintainer email="brice.rebsamen@gmail.com">Brice Rebsamen</maintainer>
 
   <license>BSD</license>
@@ -15,7 +14,7 @@
   <author>Jeremy Leibs</author>
   <author>Blaise Gassend</author>
 
-  <buildtool_depend version_gte="0.5.68">catkin</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>diagnostic_msgs</build_depend>
   <build_depend>roscpp</build_depend>

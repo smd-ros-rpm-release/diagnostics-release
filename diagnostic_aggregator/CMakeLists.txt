@@ -24,6 +24,7 @@ add_library(${PROJECT_NAME}
 target_link_libraries(diagnostic_aggregator ${Boost_LIBRARIES}
                                             ${catkin_LIBRARIES}
 )
+add_dependencies(diagnostic_aggregator ${catkin_EXPORTED_TARGETS})
 
 # Aggregator node 
 add_executable(aggregator_node src/aggregator_node.cpp)
@@ -31,19 +32,17 @@ target_link_libraries(aggregator_node ${catkin_LIBRARIES}
                                       ${PROJECT_NAME}
 )
 
-if(CATKIN_ENABLE_TESTING)
-  add_rostest(test/launch/test_agg.launch)
+add_rostest(test/launch/test_agg.launch)
 
-  # Analyzer loader allows other users to test that Analyzers load
-  add_executable(analyzer_loader test/analyzer_loader.cpp)
-  target_link_libraries(analyzer_loader diagnostic_aggregator gtest)
+# Analyzer loader allows other users to test that Analyzers load
+add_executable(analyzer_loader test/analyzer_loader.cpp)
+target_link_libraries(analyzer_loader diagnostic_aggregator gtest)
 
 
-  # Test Analyzer loader
-  add_rostest(test/launch/test_loader.launch)
-  add_rostest(test/launch/test_expected_stale.launch)
-  add_rostest(test/launch/test_multiple_match.launch)
-endif()
+# Test Analyzer loader
+add_rostest(test/launch/test_loader.launch)
+add_rostest(test/launch/test_expected_stale.launch)
+add_rostest(test/launch/test_multiple_match.launch)
 
 install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
@@ -54,6 +53,6 @@ install(FILES analyzer_plugins.xml
 install(TARGETS ${PROJECT_NAME}
         DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 )
-install(TARGETS aggregator_node
+install(TARGETS aggregator_node analyzer_loader
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

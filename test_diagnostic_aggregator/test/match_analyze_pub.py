@@ -38,6 +38,8 @@
 
 PKG = 'test_diagnostic_aggregator'
 
+import roslib; roslib.load_manifest(PKG)
+
 import rospy
 from time import sleep
 
