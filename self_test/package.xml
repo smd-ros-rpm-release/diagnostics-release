@@ -1,10 +1,11 @@
 <package>
   <name>self_test</name>
-  <version>1.7.11</version>
+  <version>1.8.4</version>
   <description>self_test</description>
   <author>Kevin Watts</author>
   <author email="brice.rebsamen@gmail.com">Brice Rebsamen</author>
   <maintainer email="brice.rebsamen@gmail.com">Brice Rebsamen</maintainer>
+  <maintainer email="namniart@gmail.com">Austin Hendrix</maintainer>
 
   <license>BSD</license>
 
@@ -27,8 +28,4 @@
   <!-- <test_depend>roscpp</test_depend> -->
   <!-- <test_depend>diagnostic_updater</test_depend> -->
   <!-- <test_depend>diagnostic_msgs</test_depend> -->
-
-  <export>
-    <architecture_independent/>
-  </export>
 </package>
