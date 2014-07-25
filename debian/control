@@ -1,0 +1,12 @@
+Source: ros-groovy-test-diagnostic-aggregator
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-groovy-catkin, ros-groovy-diagnostic-aggregator, ros-groovy-diagnostic-msgs, ros-groovy-pluginlib, ros-groovy-roscpp, ros-groovy-rospy, ros-groovy-rostest
+Homepage: http://ros.org/wiki/test_diagnostic_aggregator
+Standards-Version: 3.9.2
+
+Package: ros-groovy-test-diagnostic-aggregator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-diagnostic-aggregator, ros-groovy-diagnostic-msgs, ros-groovy-pluginlib, ros-groovy-roscpp, ros-groovy-rospy
+Description: Basic diagnostic_aggregator tests are in the
