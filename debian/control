@@ -1,0 +1,12 @@
+Source: ros-indigo-self-test
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-diagnostic-msgs, ros-indigo-diagnostic-updater, ros-indigo-roscpp, ros-indigo-rostest
+Homepage: http://www.ros.org/wiki/self_test
+Standards-Version: 3.9.2
+
+Package: ros-indigo-self-test
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-diagnostic-msgs, ros-indigo-diagnostic-updater, ros-indigo-roscpp
+Description: self_test
