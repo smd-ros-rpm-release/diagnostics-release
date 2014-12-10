@@ -1,0 +1,12 @@
+Source: ros-hydro-test-diagnostic-aggregator
+Section: misc
+Priority: extra
+Maintainer: Brice Rebsamen <brice.rebsamen@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin, ros-hydro-diagnostic-aggregator, ros-hydro-diagnostic-msgs, ros-hydro-pluginlib, ros-hydro-roscpp, ros-hydro-rospy, ros-hydro-rostest
+Homepage: http://ros.org/wiki/test_diagnostic_aggregator
+Standards-Version: 3.9.2
+
+Package: ros-hydro-test-diagnostic-aggregator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-diagnostic-aggregator, ros-hydro-diagnostic-msgs, ros-hydro-pluginlib, ros-hydro-roscpp, ros-hydro-rospy
+Description: Basic diagnostic_aggregator tests are in the
