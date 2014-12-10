@@ -1,3 +1,31 @@
+## diagnostics (indigo) - 1.8.6-0
+
+The packages in the `diagnostics` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -t indigo -r indigo diagnostics` on `Wed, 10 Dec 2014 22:01:48 -0000`
+
+These packages were released:
+- `diagnostic_aggregator`
+- `diagnostic_analysis`
+- `diagnostic_common_diagnostics`
+- `diagnostic_updater`
+- `diagnostics`
+- `self_test`
+- `test_diagnostic_aggregator`
+
+Version of package(s) in repository `diagnostics`:
+- upstream repository: https://github.com/ros/diagnostics.git
+- release repository: https://github.com/ros-gbp/diagnostics-release.git
+- rosdistro version: `1.8.4-0`
+- old version: `1.8.5-0`
+- new version: `1.8.6-0`
+
+Versions of tools used:
+- bloom version: `0.5.15`
+- catkin_pkg version: `0.2.6`
+- rosdep version: `0.11.0`
+- rosdistro version: `0.4.0`
+- vcstools version: `0.1.35`
+
+
 ## diagnostics (hydro) - 1.8.6-0
 
 The packages in the `diagnostics` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -t hydro -r hydro diagnostics` on `Wed, 10 Dec 2014 21:57:17 -0000`
