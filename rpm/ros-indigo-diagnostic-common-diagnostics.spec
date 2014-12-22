@@ -8,8 +8,6 @@ License:        BSD
 URL:            http://ros.org/wiki/diagnostic_common_diagnostics
 Source0:        %{name}-%{version}.tar.gz
 
-BuildArch:      noarch
-
 Requires:       hddtemp
 Requires:       lm_sensors-devel
 Requires:       ros-indigo-diagnostic-updater
